@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/477bfa2aa6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="mt-20 flex justify-center items-center">
+        <div id="pad" class="border-2 w-[800px] rounded-xl min-h-[600px] flex flex-col items-center">
+            <!-- Main heading -->
+            <h1 class="mt-8 mb-5 text-2xl font-semibold uppercase leading-5 underline underline-offset-4">Task Tracker</h1>
+            <!-- input box -->
+            <div class="w-[600px]">
+            <div class="border-2 border-gray-700 rounded-lg flex items-center justify-evenly h-12">
+                <input placeholder="Start writing and press enter to create task . . . ." class="input placeholder:text-gray-400 placeholder:text-lg text-xl w-[530px] outline-none pl-3" type="text">
+                <div class="flex ml-5 justify-center items-center">
+                    <button class="button cursor-pointer text-xl rotate-90 w-10 h-10 rounded-lg flex justify-center items-center bg-gray-600 hover:bg-gray-400">
+                        <i class=" text-white fa-solid fa-arrow-turn-down"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Main content -->
+             <div class="upr">
+                <div class="output"></div>
+             </div>            
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
